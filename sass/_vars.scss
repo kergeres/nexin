@@ -1,0 +1,40 @@
+// colors
+$beige: #caafa8;
+$beige-light: #dac5bf;
+$blue-light: #aecae0;
+
+// fonts
+$royal: "abril-fatface";
+$minimal: "Montserrat";
+// for devopment
+$border: 1px solid black;
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: 0 !important;
+}
+
+//   ::-webkit-scrollbar {
+//     width: 7px;
+//   }
+
+//   ::-webkit-scrollbar-track {
+//     color: none;
+//   }
+
+//   ::-webkit-scrollbar-thumb {
+//     background: $dark-gray;
+//   }
+
+//   ::-webkit-scrollbar-thumb:hover {
+//     background: lighten($dark-gray, 5);

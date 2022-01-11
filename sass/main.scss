@@ -1,3 +1,21 @@
+@import "vars";
+@import "header-footer";
+@import "subs-content";
+
 html {
-  background-color: red;
+  font-family: $minimal;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+}
+.content-container {
+  border: $border;
+  min-height: 500px;
+  width: 1100px;
+  margin: 80px auto;
+}
+@media screen and (max-width: 1260px) {
 }
