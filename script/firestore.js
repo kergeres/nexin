@@ -88,7 +88,7 @@ let appendCard = (databasIn) => {
         </div>
         <h2 class="title"  >${card.title}</h2>
         <h3  >${card.price}</h3>
-        <h4 class="basket" >kosárba</h4>
+        <h4 class="basket" >add to basket</h4>
     </div>
         
       
