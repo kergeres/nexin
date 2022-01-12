@@ -4,14 +4,29 @@ header {
   display: flex;
   flex-direction: column;
   .bag-icon {
-    width: 18px;
+    width: 20px;
     cursor: pointer;
     color: gray;
     top: 20px;
     right: 30px;
     position: absolute;
   }
+  .basket-counter {
+    opacity: 0.9;
+    top: 31px;
+    right: 43px;
+    position: absolute;
+    border-radius: 50%;
+    font-size: 16px;
+    height: 14px;
+    width: 19px;
+    justify-content: center;
+    display: flex;
+    text-align: top;
 
+    background-color: red;
+    padding-bottom: 5px;
+  }
   h1 {
     height: 60px;
     // border: $border;
