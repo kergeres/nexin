@@ -24,7 +24,7 @@
     text-align: center;
     width: 100%;
     // border: $border;
-    height: 25px;
+    min-height: 25px;
   }
   h3 {
     text-align: center;
@@ -130,5 +130,22 @@
   }
   .basket {
     opacity: 1 !important;
+  }
+
+  .card-container {
+    &:hover {
+      border: $border;
+    }
+    &:hover .card-image {
+      transform: none;
+    }
+    &:hover .card-img-container {
+      height: 180px;
+    }
+  }
+  .basket-table {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
   }
 }

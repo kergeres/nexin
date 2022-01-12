@@ -44,6 +44,7 @@ header .basket-counter {
 }
 header h1 {
   height: 60px;
+  font-weight: lighter;
   text-align: center;
   justify-content: center;
   display: flex;
@@ -94,7 +95,6 @@ footer {
     display: flex;
     justify-content: center;
     left: -100%;
-    transition: 0.5s;
   }
   header .bag-icon {
     width: 30px;
@@ -168,7 +168,7 @@ footer {
   }
 
   .ham-menu-line {
-    background-color: #1b0d01;
+    background-color: #caafa8;
     cursor: pointer;
     height: 5px;
     position: relative;
@@ -176,14 +176,13 @@ footer {
     top: 11px;
     right: 0px;
     display: block;
-    transition: 0.5s all;
+    transition: 0.3s all;
     border-radius: 1px;
-    background-color: black !important;
   }
 
   .ham-menu-linea,
 .ham-menu-lineb {
-    background-color: #1b0d01;
+    background-color: #caafa8;
     content: "";
     display: block;
     height: 5px;
@@ -192,8 +191,7 @@ footer {
     width: 40px;
     border-radius: 1px;
     cursor: pointer;
-    transition: 0.5s all;
-    background-color: black !important;
+    transition: 0.3s all;
   }
 
   .upload-btn-ph {
@@ -217,7 +215,7 @@ footer {
 
   .ham-menu-linea,
 .ham-menu-lineb {
-    background-color: #1b0d01;
+    background-color: #caafa8;
     content: "";
     display: block;
     height: 5px;
@@ -226,8 +224,7 @@ footer {
     width: 40px;
     border-radius: 1px;
     cursor: pointer;
-    transition: 0.5s all;
-    background-color: black !important;
+    transition: 0.2s all;
   }
 
   .ham-menu-lineb {
@@ -243,18 +240,20 @@ footer {
     transform: rotate(45deg);
     top: 12px;
     width: 40px;
-    transition: 0.5s all;
+    transition: 0.3s all;
+    background-color: #dac5bf;
   }
 
   .lineb-rot {
     transform: rotate(-45deg);
     top: 12px;
-    transition: 0.5s all;
+    transition: 0.3s all;
+    background-color: #dac5bf;
   }
 
   .line-rot {
     right: -360px;
-    transition: all 0.5s;
+    background-color: #dac5bf;
   }
 }
 @keyframes headerLogoColorChange {
@@ -262,7 +261,7 @@ footer {
     color: #c5dbed;
   }
   50% {
-    color: #aecae0;
+    color: #d8e4ed;
   }
   100% {
     color: #c5dbed;
@@ -294,7 +293,7 @@ footer {
 .card-container h2 {
   text-align: center;
   width: 100%;
-  height: 25px;
+  min-height: 25px;
 }
 .card-container h3 {
   text-align: center;
@@ -395,6 +394,22 @@ footer {
   .basket {
     opacity: 1 !important;
   }
+
+  .card-container:hover {
+    border: 1px solid black;
+  }
+  .card-container:hover .card-image {
+    transform: none;
+  }
+  .card-container:hover .card-img-container {
+    height: 180px;
+  }
+
+  .basket-table {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+  }
 }
 html {
   font-family: "Montserrat";
@@ -416,6 +431,10 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+  main {
+    min-height: 90vh;
+  }
+
   .content-container {
     width: 95vw;
     display: block;

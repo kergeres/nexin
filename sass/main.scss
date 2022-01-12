@@ -24,6 +24,9 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+  main {
+    min-height: 90vh;
+  }
   .content-container {
     width: 95vw;
     display: block;
