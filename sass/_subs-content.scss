@@ -60,6 +60,26 @@
     color: gray;
   }
 }
+.table-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#submit {
+  width: 120px;
+  height: 40px;
+
+  background-color: none;
+  border: 2px solid $gray;
+  cursor: pointer;
+  font-family: $minimal;
+  text-transform: uppercase;
+  &:hover {
+    border-color: $beige;
+  }
+}
+
 .delete-x {
   cursor: pointer;
 }
@@ -74,7 +94,7 @@
 .basket-table {
   align-self: start;
   width: 500px;
-  margin: 0 auto;
+  margin: 0 auto 120px auto;
   padding: 20px;
   border-collapse: collapse;
   caption {
@@ -85,18 +105,6 @@
   }
   td:last-child {
     text-align: end;
-  }
-  button {
-    width: 120px;
-    height: 40px;
-    background-color: none;
-    border: 2px solid $gray;
-    cursor: pointer;
-    font-family: $minimal;
-    text-transform: uppercase;
-    &:hover {
-      border-color: $beige;
-    }
   }
 
   thead {

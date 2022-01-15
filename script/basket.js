@@ -65,18 +65,12 @@ let appendBasket = () => {
             <td></td>
             <td>Total</td>
             <td>${itemcounter}</td>
-            <td>${total}</td>
+            <td id="total">${total}</td>
             <td>HUF</td>
             
             </tr> 
              <tr> 
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td><button>Checkout</button></td>
-            
-            </tr>`;
+            `;
 
         }
         inBasketProducts()

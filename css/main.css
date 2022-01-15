@@ -328,6 +328,26 @@ footer {
   color: gray;
 }
 
+.table-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#submit {
+  width: 120px;
+  height: 40px;
+  background-color: none;
+  border: 2px solid #b0b0b0;
+  cursor: pointer;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+}
+#submit:hover {
+  border-color: #caafa8;
+}
+
 .delete-x {
   cursor: pointer;
 }
@@ -341,7 +361,7 @@ footer {
 .basket-table {
   align-self: start;
   width: 500px;
-  margin: 0 auto;
+  margin: 0 auto 120px auto;
   padding: 20px;
   border-collapse: collapse;
 }
@@ -352,18 +372,6 @@ footer {
 }
 .basket-table td:last-child {
   text-align: end;
-}
-.basket-table button {
-  width: 120px;
-  height: 40px;
-  background-color: none;
-  border: 2px solid #b0b0b0;
-  cursor: pointer;
-  font-family: "Montserrat";
-  text-transform: uppercase;
-}
-.basket-table button:hover {
-  border-color: #caafa8;
 }
 .basket-table thead {
   height: 90px;
