@@ -73,7 +73,7 @@ function onGooglePayButtonClicked() {
 }
 
 function processPaymentData(paymentData) {
-    fetch(erdersEndpointUrl, {
+    fetch('https://www.nexinwebshop.com/sub/basket.html', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
