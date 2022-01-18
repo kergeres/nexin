@@ -13,6 +13,12 @@ main {
   // background-color: #d1d1d1;
   padding-top: 10px;
 }
+.gpay-card-info-placeholder-container {
+  cursor: not-allowed;
+  &:hover::after {
+    content: "cs" !important;
+  }
+}
 .content-container {
   // border: 1px solid red;
   height: auto;

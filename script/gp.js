@@ -32,7 +32,7 @@ let googlePayClient;
 
 function onGooglePayLoaded() {
     googlePayClient = new google.payments.api.PaymentsClient({
-        enviroment: 'TEST',
+        enviroment: 'PRODUCTION',
 
     })
 
@@ -55,7 +55,8 @@ function createAndAddButton() {
 }
 
 function onGooglePayButtonClicked() {
-    const paymentDataRequest = { ...googlePayConfiguration };
+    alert("Selected item is not in stock")
+    // const paymentDataRequest = { ...googlePayConfiguration };
     paymentDataRequest.merchantInfo = {
         merchantId: 'BCR2DN4T3CG37ORA',
         merchantName: 'Nexin',
@@ -68,12 +69,12 @@ function onGooglePayButtonClicked() {
         countryCode: 'HU',
     }
     googlePayClient.loadPaymentData(paymentDataRequest)
-        .then(paymentData => processPaymentData(paymentData))
+        .then(paymentData => console.log(paymentData))
         .catch(error => console.error(`loadPaymentData error: ${error}`))
 }
 
 function processPaymentData(paymentData) {
-    fetch('https://www.nexinwebshop.com/sub/basket.html', {
+    fetch(ordersEndpointUrl, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

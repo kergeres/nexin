@@ -452,6 +452,13 @@ main {
   padding-top: 10px;
 }
 
+.gpay-card-info-placeholder-container {
+  cursor: not-allowed;
+}
+.gpay-card-info-placeholder-container:hover::after {
+  content: "cs" !important;
+}
+
 .content-container {
   height: auto;
   width: 1100px;
