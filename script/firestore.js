@@ -83,7 +83,7 @@ let appendCard = (databasIn) => {
         htmltemlapte += `
         <div id="${card.id}" class="card-container">
         <div class="card-img-container">
-            <img class="card-image"
+            <img alt="${card.title}" class="card-image"
                 src="${card.imgSrc}">
         </div>
         <h2 class="title"  >${card.title}</h2>

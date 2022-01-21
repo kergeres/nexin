@@ -5,12 +5,41 @@
 html {
   font-family: $minimal;
 }
+.text-show {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+.land-text {
+  opacity: 0;
+  transform: translateY(30px);
+  width: 80%;
+  margin: 40px auto;
+  color: #707070;
+  transition: 1.5s;
+}
+.landing-content-container {
+  // border: $border;
+  width: 1000px;
+  margin: 40px auto;
+  height: 500px;
+  text-align: center;
+  .land-h {
+    align-self: center;
+    color: #424242;
+    font-weight: 600;
+    opacity: 0;
+    transition: 1.5s;
+  }
+}
+.text-showb {
+  opacity: 1 !important;
+}
 
 main {
   width: 100%;
   height: auto;
   min-height: 500px;
-  // background-color: #d1d1d1;
+  background-color: #faf0ed;
   padding-top: 10px;
 }
 .gpay-card-info-placeholder-container {
@@ -27,6 +56,15 @@ main {
   display: flex;
   // align-items: center;
   min-height: 500px;
+}
+
+footer {
+  display: flex;
+  justify-content: end;
+}
+.gp-logo {
+  width: 300px;
+  align-self: center;
 }
 
 @media screen and (max-width: 768px) {
