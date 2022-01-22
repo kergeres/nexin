@@ -519,6 +519,18 @@ footer {
     width: 95vw;
     display: block;
   }
+
+  .landing-content-container {
+    width: 100%;
+  }
+  .landing-content-container .land-text {
+    text-align: justify;
+  }
+
+  .gp-logo {
+    width: 60vw;
+    align-self: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
