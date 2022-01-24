@@ -17,6 +17,11 @@ html {
   color: #707070;
   transition: 1.5s;
 }
+.title {
+  h2 {
+    font-weight: lighter;
+  }
+}
 .landing-content-container {
   // border: $border;
   width: 1000px;
